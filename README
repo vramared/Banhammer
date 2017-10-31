@@ -1,0 +1,37 @@
+Vineet Ramareddi 
+	ID : 1535346
+
+
+I am submitting the following files:
+
+	README
+	aes.c
+	aes.h
+	ll.h
+	ll.c
+	Makefile
+	banhammer.c
+	hash.h
+	hash.c
+	bf.h
+	words.l
+
+For this assignment, I implemented a firewall which catches oldspeak words and provides the translation to newspeak.
+For the badspeak words, there are no translations, and therefore these words constitute a thoughtcrime and the
+corresponding message is printed. I used flex in order to read from standard input. I incorporated this into my
+Makefile after taking a look at Boris's tutorial. For this assignment, I have implemented everything except Esperanto
+due to my lack of time. Also, the statistic for the average does not correspond with the professors program, and this
+is because I did not call findLL in my insertHT function. I did this intentionally, because otherwise it would not 
+take the latest translation for a word that has two translations in newspeak. For this reason, my average statistic is
+off. However, apart from this, the rest of my program is fully functionaly, to my knowledge. I have checked my output
+with the professors, and used diff to ensure that the output are exact. My program also supports file redirection, 
+so ./banhammer < "File Name" will work as specified.  
+
+My program compiles perfectly using 'make'. As always, make clean will remove any executables created by make. Furthermore
+typing 'make aes' or 'make all' or 'make ll' will work as well. 
+
+I received help from numerous tutors. I attended Arjun's office hours on Friday May 19th, as well as Yash's, and Boris'. Furthermore,
+I went to multiple labs to receive additional help. One thing I would like to mention is what Arjun inspired. At his office hours
+on Friday, Arjun gave us pseudo code for storing the values of oldspeak and newspeak, after figuring out what to print and what
+not to print. I implemented this pseudo code within my program to store the values of badspeak, and the oldspeak and newspeak pairs 
+in two separate linked lists. I then printed each linked list for the output, and formatted it as needed. 
