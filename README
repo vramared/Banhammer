@@ -1,20 +1,4 @@
-Vineet Ramareddi 
-	ID : 1535346
-
-
-I am submitting the following files:
-
-	README
-	aes.c
-	aes.h
-	ll.h
-	ll.c
-	Makefile
-	banhammer.c
-	hash.h
-	hash.c
-	bf.h
-	words.l
+UCSC CMPS 12B Assignment
 
 For this assignment, I implemented a firewall which catches oldspeak words and provides the translation to newspeak.
 For the badspeak words, there are no translations, and therefore these words constitute a thoughtcrime and the
